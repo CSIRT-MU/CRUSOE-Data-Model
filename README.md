@@ -15,10 +15,10 @@ username: neo4j
 password: neo4jAres
 ```
 
-This repo also contains a beautifier style.grass which provides Neo4j frontend a style with nice colors to browse the data. To use it, just drag-and-drop this file into import section of Neo4j frontend.
+This repo also contains a beautifier *style.grass* which provides Neo4j frontend a style with nice colors to browse the data. To use it, just drag-and-drop this file into import section of Neo4j frontend.
 
 To quickly scan through the database and see the data model example, you can see the screenshots in Pictures folder.
 
-Reference
+## Reference
 
 KOMÁRKOVÁ, Jana, Martin HUSÁK, Martin LAŠTOVIČKA a Daniel TOVARŇÁK. CRUSOE: Data Model for Cyber Situation Awareness. In Proceedings of the 13th International Conference on Availability, Reliability and Security. Hamburg: ACM, 2018. s. "36:1--36:10", 10 s. ISBN 978-1-4503-6448-5. doi:10.1145/3230833.3232798.

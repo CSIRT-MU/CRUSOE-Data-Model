@@ -1,0 +1,10 @@
+Application,Device,Permission,Role,User,Group,OrganizationUnit
+Eshop,PC,Run software,Administrator,Joe,group1,organizationUnit1
+WebDiary,Printer,Install software,User,James,group2,organizationUnit2
+MicrosoftAccess,,Unistall software,Moderator,Natalie,group3,
+Filemaker,,Modify content,,Adriana,group4,
+Thunderbird,,Add content,,Martin,,
+,,Remove Content,,John,,
+,,,,Francis,,
+,,,,Lagertha,,
+,,,,Frank,,

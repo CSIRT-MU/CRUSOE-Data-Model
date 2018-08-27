@@ -1,0 +1,80 @@
+---
+- name: copy Host layer nodes
+  copy:
+    src: '{{ host_layer_path }}HostLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Host layer relationships
+  copy:
+    src: '{{ host_layer_path }}HostLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy System layer nodes
+  copy:
+    src: '{{ system_layer_path }}SystemLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy System layer relationships
+  copy: 
+    src: '{{ system_layer_path }}SystemLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+ 
+- name: copy Network layer nodes
+  copy:
+    src: '{{ network_layer_path }}NetworkLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Network layer relationships
+  copy:
+    src: '{{ network_layer_path }}NetworkLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Detection and response layer nodes
+  copy:
+    src: '{{ detection_and_response_layer_path }}DetectionAndResponseLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Detection and response layer relationships
+  copy:
+    src: '{{ detection_and_response_layer_path }}DetectionAndResponseLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Acces control layer nodes
+  copy:
+    src: '{{ access_control_layer_path }}AccessLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Access control layer relationships
+  copy:
+    src: '{{ access_control_layer_path }}AccessLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Mission layer nodes
+  copy:
+    src: '{{ mission_layer_path }}MissionLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Mission layer relationships
+  copy:
+    src: '{{ mission_layer_path }}MissionLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Threat layer nodes
+  copy:
+    src: '{{ threat_layer_path }}ThreatLayerNodes.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Threat layer relationships
+  copy:
+    src: '{{ threat_layer_path }}ThreatLayerRelationships.csv'
+    dest: '{{ neo4j_import_path }}'
+
+- name: copy Python
+  copy:
+    src: '{{python_path}}'
+    dest: '/home/vagrant'
+
+- name: run import script
+  command: /usr/bin/python ./main.py
+  args:
+    chdir: '/home/vagrant/Python/'

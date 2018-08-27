@@ -1,0 +1,18 @@
+PhysicalHost,VirtualHost,Email,Telephone,Cluster,SoftwareResource,NRPort,NRProtocol
+Sirius.example.com,Saturn.example.com,adams@example.com,664123456,Hcluster1-example.com,Windows 10,80,TCP
+Altair.example.com,Jupiter.example.com,clark@example.com,871392224,Hcluster2-example.com,MacOS 10X,20,TCP
+Antares.example.com,Mars.example.com,david@example.com,983354211,Hcluster3-example.com,Debian 9.0,465,TCP
+Rigel.example.com,Uranus.example.com,klein@example.com,113788945,,Apache HTTP server,5432,TCP
+Hadar.example.com,Neptune.example.com,mason@example.com,214385432,,Nmap,3306,TCP
+Izar.example.com,"Mercury,example.com",valdo@example.com,556832942,,Wireshark,,
+Keio.example.com,,xiang@example.com,358944311,,XAMPP,,
+Ogma.example.com,,zafar@example.com,444523368,,MAMP,,
+,,,,,AMAHI,,
+,,,,,Filezilla,,
+,,,,,Postfix,,
+,,,,,PHP,,
+,,,,,PERL,,
+,,,,,OpenSSL,,
+,,,,,MariaDB,,
+,,,,,PostgreSQL,,
+,,,,,tar,,

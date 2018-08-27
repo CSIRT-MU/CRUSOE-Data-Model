@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  vars:
+    host_layer_path: ../Assets/HostLayer/
+    system_layer_path: ../Assets/SystemLayer/
+    network_layer_path: ../Assets/NetworkLayer/
+    detection_and_response_layer_path: ../Assets/DetectionAndResponseLayer/
+    access_control_layer_path: ../Assets/AccessControlLayer/
+    mission_layer_path: ../Assets/MissionLayer/
+    threat_layer_path: ../Assets/ThreatLayer/
+    neo4j_import_path: /var/lib/neo4j/import/
+    python_path: ../Assets/Python
+    src_requirements_path: ../templates/
+    destination_path: /home/vagrant/ # Where package is unarchived, destination path must exists
+    style_path: ../model/Assets/style.grass
+  roles:
+    - neo4j
+    - pythonPackages
+    - model

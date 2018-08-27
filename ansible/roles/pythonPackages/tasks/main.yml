@@ -1,0 +1,18 @@
+- name: install pip
+  apt:
+    name: python-pip
+    update_cache: yes
+
+- name: copy requirements
+  copy: 
+    src: "{{src_requirements_path}}requirements.txt"
+    dest: "{{destination_path}}"
+
+- name: install requirements.txt
+  pip:
+    requirements: "{{destination_path}}/requirements.txt"
+
+- name: clean requirements.txt
+  file:
+    path: "{{destination_path}}requirements.txt"
+    state: absent 

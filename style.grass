@@ -1,0 +1,294 @@
+
+{
+  "node": {
+    "diameter": "50px",
+    "color": "#A5ABB6",
+    "border-color": "#9AA1AC",
+    "border-width": "2px",
+    "text-color-internal": "#FFFFFF",
+    "font-size": "10px"
+  },
+  "relationship": {
+    "color": "#A5ABB6",
+    "shaft-width": "1px",
+    "font-size": "8px",
+    "padding": "3px",
+    "text-color-external": "#000000",
+    "text-color-internal": "#FFFFFF",
+    "caption": "<type>"
+  },
+   "node.Node": {
+    "color": "#72bcd4",
+    "border-color": "#8aacb8",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  },
+   "node.IP": {
+    "color": "#86c5da",
+    "border-color": "#72bcd4",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "ipAddress",
+    "caption": "{ipAddress}",
+    "diameter": "80px"
+  },
+   "node.Subnet": {
+    "color": "#add8e6",
+    "border-color": "#99cfe0",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "subnet",
+    "caption": "{subnet}",
+    "diameter": "90px"
+  },
+   "node.DomainName": {
+    "color": "#99cfe0",
+    "border-color": "#86c5da",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  },
+  "node.VirtualHost": {
+    "color": "#00ff00",
+    "border-color": "#00e500",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  },
+  "node.PhysicalHost": {
+    "color": "#00ff00",
+    "border-color": "#00e500",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "75px"
+  },
+  "node.HostCluster": {
+    "color": "#009900",
+    "border-color": "#007f00",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "clusterName",
+    "caption": "{clusterName}",
+    "diameter": "95px"
+  },
+  "node.Telephone": {
+    "color": "#32ff32",
+    "border-color": "#19ff19",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "telephoneNumber",
+    "caption": "{telephoneNumber}",
+    "diameter": "50px"
+  },
+  "node.Email": {
+    "color": "#32ff32",
+    "border-color": "#19ff19",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "mail",
+    "caption": "{mail}",
+    "diameter": "50px"
+  },
+    "node.SoftwareResource": {
+    "color": "#00cc00",
+    "border-color": "#00b200",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "60px"
+  },
+    "node.NetworkService": {
+    "color": "#00b200",
+    "border-color": "#009900",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "protocol",
+    "caption": "{protocol}",
+    "diameter": "65px"
+  },
+  "node.DetectionSystem": {
+    "color": "#e69500",
+    "border-color": "#cc8400",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "75px"
+  },
+  "node.Incident": {
+    "color": "#ffb733",
+    "border-color": "#ffae1a",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "severity",
+    "caption": "{severity}",
+    "diameter": "70px"
+  },
+  "node.ObservationPoint": {
+    "color": "#ffae1a",
+    "border-color": "#ffa500",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "65px"
+  },
+  "node.Response": {
+    "color": "#ffc04d",
+    "border-color": "#ffb733",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "responseType",
+    "caption": "{responseType}",
+    "diameter": "60px"
+  },
+  "node.SecurityEvent": {
+    "color": "#ffa500",
+    "border-color": "#e69500",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "description",
+    "caption": "{description}",
+    "diameter": "75px"
+  },
+  "node.Component": {
+    "color": "#ff3232",
+    "border-color": "#ff1919",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "85px"
+  },
+  "node.DependencyNode": {
+    "color": "#ff6666",
+    "border-color": "#ff4c4c",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  },
+  "node.RedundancyNode": {
+    "color": "#ff4c4c",
+    "border-color": "#ff3232",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "75px"
+  },
+  "node.Data": {
+    "color": "#ff7f7f",
+    "border-color": "#ff6666",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "data",
+    "caption": "{data}",
+    "diameter": "65px"
+  },
+
+
+  "node.Application": {
+    "color": "#cccc00",
+    "border-color": "#b3b300",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "60px"
+  },
+  "node.Device": {
+    "color": "#e6e600",
+    "border-color": "#cccc00",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "60px"
+  },
+  "node.Permission": {
+    "color": "#ffff00",
+    "border-color": "#ffff33",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "65px"
+  },
+  "node.Role": {
+    "color": "#ffff33",
+    "border-color": "#e5e500",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  },
+  "node.User": {
+    "color": "#e5e500",
+    "border-color": "#b2b200",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "75px"
+  },
+  "node.Group": {
+    "color": "#b2b200",
+    "border-color": "#999900",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "80px"
+  },
+  "node.OrganizationUnit": {
+    "color": "#999900",
+    "border-color": "#7f7f00",
+    "text-color-internal": "#604A0E",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "85px"
+  },
+  "node.Mission": {
+    "color": "#2a2a2a",
+    "border-color": "#151515",
+    "text-color-internal": "#EEEEEE",
+    "defaultCaption": "mission",
+    "caption": "{mission}",
+    "diameter": "85px"
+  },
+  "node.AvailabilityRequirement": {
+    "color": "#696969",
+    "border-color": "#545454",
+    "text-color-internal": "#000000",
+    "defaultCaption": "description",
+    "caption": "{description}",
+    "diameter": "65px"
+  },
+  "node.ConfidentialityRequirement": {
+    "color": "#545454",
+    "border-color": "#3f3f3f",
+    "text-color-internal": "#BBBBBB",
+    "defaultCaption": "description",
+    "caption": "{description}",
+    "diameter": "65px"
+  },
+  "node.IntegrityRequirement": {
+    "color": "#3f3f3f",
+    "border-color": "#2a2a2a",
+    "text-color-internal": "#DDDDDD",
+    "defaultCaption": "description",
+    "caption": "{description}",
+    "diameter": "65px"
+  },
+  "node.CVE": {
+    "color": "#551a8b",
+    "border-color": "#621ea0",
+    "text-color-internal": "#ffffff",
+    "defaultCaption": "cve",
+    "caption": "{cve}",
+    "diameter": "80px"
+  },
+  "node.SoftwareVersion": {
+    "color": "#621ea0",
+    "border-color": "#6f22b6",
+    "text-color-internal": "#ffffff",
+    "defaultCaption": "version",
+    "caption": "{version}",
+    "diameter": "60px"
+  },
+  "node.Vulnerability": {
+    "color": "#6f22b6",
+    "border-color": "#7c26cb",
+    "text-color-internal": "#ffffff",
+    "defaultCaption": "name",
+    "caption": "{name}",
+    "diameter": "70px"
+  }
+}

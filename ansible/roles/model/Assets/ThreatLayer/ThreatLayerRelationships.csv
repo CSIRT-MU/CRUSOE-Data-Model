@@ -1,0 +1,14 @@
+VulnerabilityIn,SoftwareV,CVE,SoftwareResource,SoftVersion,VulnIn,Software,SecEvent,Vuln
+Buffer overflow in FileZilla,<0.9.31,CVE-2009-0884,Filezilla,0.9.30,Buffer overflow in FileZilla,Filezilla,2018-06-15T14:45:30,The mod_deflate module in Apache httpd
+The mod_deflate module in Apache httpd,<2.2.11,CVE-2009-1891,Apache HTTP server,2.2.10,The mod_deflate module in Apache httpd,Apache HTTP server,2018-06-15T13:45:31,Invalid handling of session ID in Apache HTTP server
+Default or null passwords in XAMPP,<=1.4.x,CVE-2005-1078,XAMPP,1.4.2,Default or null passwords in XAMPP,XAMPP,2018-06-17T13:45:46,Arbitrary code execution in MariaDB
+Arbitrary commands execution in Perl,<5.17.7,CVE-2012-6329,PERL,5.17.6,Arbitrary commands execution in Perl,PERL,2018-06-15T16:45:33,Out-of-bonds read in OpenSSL
+Invalid handling of session ID in Apache HTTP server,<2.4.5,CVE-2013-2249,MariaDB,5.5.49,Invalid handling of session ID in Apache HTTP server,Apache HTTP server,2018-06-19T13:45:43,Information leak in PostgreSQL
+Availability changes in MariaDB,<5.5.50,CVE-2016-3521,PHP,5.6.30,Availability changes in MariaDB,MariaDB,,
+Arbitrary code execution in MariaDB,<5.5.51,CVE-2016-6662,PostgreSQL,9.2.20,Arbitrary code execution in MariaDB,MariaDB,,
+Incorrect input handling in PHP,<5.6.31,CVE-2017-11142,OpenSSL,1.0.1,Incorrect input handling in PHP,PHP,,
+Incorrect privileges handling in PostgreSQL,<9.2.21,CVE-2017-7484,,,Incorrect privileges handling in PostgreSQL,PostgreSQL,,
+Inproper SSL/TLS connection in PostgreSQL,<9.3.x,CVE-2017-7485,,,Inproper SSL/TLS connection in PostgreSQL,PostgreSQL,,
+Information leak in PostgreSQL,8.4 – 9.6,CVE-2017-7486,,,Information leak in PostgreSQL,PostgreSQL,,
+Montgomery squaring procedure bug in OpenSSL,<1.0.2,CVE-2017-3732,,,Montgomery squaring procedure bug in OpenSSL,OpenSSL,,
+Out-of-bonds read in OpenSSL,<1.1.0,CVE-2017-3731,,,Out-of-bonds read in OpenSSL,OpenSSL,,

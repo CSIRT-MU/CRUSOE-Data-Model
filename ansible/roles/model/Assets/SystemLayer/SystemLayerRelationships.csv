@@ -1,0 +1,10 @@
+Component,DependsOn,DependencyNode,DependsComponent,Redundancy,Component2,Component3,Datas,RedundancyNode,SoftwareResource,Redundancy2,Software2
+WebServer1,DependencyNode2,DependencyNode1,DatabaseServer1,RedundancyNode1,WebServer1,WebServer1,WebServer1ConfigurationData,RedundancyNode1,XAMPP,RedundancyNode1,Apache HTTP server
+WebServer2,DependencyNode1,DependencyNode2,DatabaseServer2,RedundancyNode2,WebServer2,WebServer2,WebSourceCode,RedundancyNode2,MAMP,RedundancyNode2,XAMPP
+,,DependencyNode1,DatabaseServer2,RedundancyNode3,FileServer1,FileServer1,ProductsData,RedundancyNode3,AMAHI,,
+,,DependencyNode2,DatabaseServer1,RedundancyNode4,FileServer2,WebServer2,InternalData,RedundancyNode4,Filezilla,,
+,,,,RedundancyNode5,MailServer,MailServer,MailData,RedundancyNode5,Postfix,,
+,,,,RedundancyNode6,DatabaseServer1,DatabaseServer1,Database1Tables,RedundancyNode6,MariaDB,,
+,,,,RedundancyNode7,DatabaseServer2,DatabaseServer2,Database2Tables,RedundancyNode7,PostgreSQL,,
+,,,,,,DatabaseServer1,CustomersData,,,,
+,,,,,,WebServer1,Payments,,,,

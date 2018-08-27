@@ -1,0 +1,16 @@
+NodeHost,IPHost,StartHost,EndHost,Node,IP2,Start,End,Ippart,SubnetPart,SubnetpartSubnet,BigSubnet,ConnectedFrom,ConnectedTo,ResolvedIP,ResolvedDomain,ResolvedStart,ResolvedEnd
+Sirius.example.com,147.251.x.17,04/15/18 12:02 AM,04/20/18 12:02 AM,router1,147.251.x.20,04/15/18 08:02 AM,04/28/18 08:02 AM,147.251.x.17,147.251.x.16/28,147.251.x.16/28,147.251.x.0/24,Sirius.example.com,router1,147.251.x.17,domain1.example.com,04/15/18 12:02 AM,04/17/18 12:02 AM
+Altair.example.com,147.251.x.18,04/15/18 01:02 AM,04/21/18 01:02 AM,router2,147.251.x.60,04/15/18 10:02 AM,04/29/18 10:02 AM,147.251.x.18,147.251.x.16/28,147.251.x.48/28,147.251.x.0/24,Altair.example.com,router1,147.251.x.17,domain2.example.com,04/17/18 12:02 AM,04/18/18 01:02 AM
+Antares.example.com,147.251.x.19,04/15/18 02:02 AM,04/22/18 02:02 AM,router3,147.251.x.105,04/15/18 09:02 AM,05/01/18 09:02 AM,147.251.x.19,147.251.x.16/28,147.251.x.96/28,147.251.x.0/24,Rigel.example.com,router2,147.251.x.18,domain3.example.com,04/15/18 02:02 AM,04/19/18 02:02 AM
+Rigel.example.com,147.251.x.56,04/15/18 03:02 AM,04/23/18 03:02 AM,switch1,147.251.x.106,04/15/18 11:02 AM,05/02/18 11:02 AM,147.251.x.20,147.251.x.16/28,,,Hadar.example.com,router2,147.251.x.18,domain2.example.com,04/19/18 02:02 AM,04/23/18 03:02 AM
+Hadar.example.com,147.251.x.57,04/15/18 04:02 AM,04/24/18 04:02 AM,switch2,147.251.x.107,04/15/18 01:02 PM,05/03/18 01:02 PM,147.251.x.56,147.251.x.48/28,,,Ogma.example.com,router3,147.251.x.19,domain5.example.com,04/15/18 04:02 AM,04/20/18 04:02 AM
+Izar.example.com,147.251.x.58,04/15/18 05:02 AM,04/25/18 05:02 AM,,,,,147.251.x.57,147.251.x.48/28,,,,,147.251.x.20,domain5.example.com,04/20/18 04:02 AM,04/25/18 05:02 AM
+Keio.example.com,147.251.x.59,04/15/18 06:02 AM,04/26/18 06:02 AM,,,,,147.251.x.58,147.251.x.48/28,,,,,147.251.x.56,domain6.example.com,04/15/18 06:02 AM,04/26/18 06:02 AM
+Ogma.example.com,147.251.x.108,04/15/18 07:02 AM,04/27/18 07:02 AM,,,,,147.251.x.59,147.251.x.48/28,,,,,147.251.x.57,domain7.example.com,04/15/18 07:02 AM,04/27/18 07:02 AM
+,,,,,,,,147.251.x.60,147.251.x.48/28,,,,,147.251.x.58,domain8.example.com,04/15/18 08:02 AM,04/28/18 08:02 AM
+,,,,,,,,147.251.x.105,147.251.x.96/28,,,,,147.251.x.59,domain9.example.com,04/15/18 10:02 AM,04/29/18 10:02 AM
+,,,,,,,,147.251.x.106,147.251.x.96/28,,,,,147.251.x.60,domain10.example.com,04/15/18 09:02 AM,05/01/18 09:02 AM
+,,,,,,,,147.251.x.107,147.251.x.96/28,,,,,147.251.x.105,domain11.example.com,04/15/18 11:02 AM,05/02/18 11:02 AM
+,,,,,,,,147.251.x.108,147.251.x.96/28,,,,,147.251.x.106,domain12.example.com,04/15/18 01:02 PM,05/03/18 01:02 PM
+,,,,,,,,,,,,,,147.251.x.107,domain13.example.com,04/15/18 11:02 AM,05/02/18 11:02 AM
+,,,,,,,,,,,,,,147.251.x.108,domain4.example.com,04/15/18 01:02 PM,05/03/18 01:02 PM

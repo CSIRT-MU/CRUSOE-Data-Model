@@ -1,0 +1,6 @@
+Mission,Criticality,AvailabilityRequirement,AvailabilityImportanceLevel,ConfidentialityRequirement,ConfidentialityImportanceLevel,IntegrityRequirement,IntegrityImportanceLevel
+Manage eshop,2,System should not be unavailable for customers for more than 10 hours,1,"None, data are not confidential",1,Data must be accurate and consistent,4
+Manage personal data,4,Data should always be available to managers,4,Only chosen managers can access personal data ,4,Data should be consistent,2
+Manage mail client,3,mail client should not be unavailable for employees for more than 10 minutes,2,Only authorized people can access own data,3,Data must be consistent,3
+Manage database,4,Database data must be always available for employees(besides maintenance),3,Only authorized people can access database data,3,,
+Manage web diary,1,"None, system can be unavailable",1,,,,

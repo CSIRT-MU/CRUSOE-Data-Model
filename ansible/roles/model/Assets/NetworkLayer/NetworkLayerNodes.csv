@@ -1,0 +1,14 @@
+Node,Routerrule,FilterRule,IP,DomainName,Subnet,SubnetVlan,SubnetContact,SubnetRange
+router1,ip rule add 147.251.xx.yy lookup routingTable1,iptables -A INPUT -s “147.251.xx.yy” -j DROP,147.251.x.17,domain1.example.com,147.251.x.16/28,vlan1,adams@example.com,16-31
+router2,ip rule add 147.251.xx.yy lookup routingTable2,iptables -A OUTPUT -p icmp –icmp-type echo-reply -j ACCEPT,147.251.x.18,domain2.example.com,147.251.x.48/28,vlan2,clark@example.com,48-63
+router3,ip rule add 147.251.xx.yy lookup routingTable3,iptables -A INPUT -i lo -j ACCEPT,147.251.x.19,domain3.example.com,147.251.x.96/28,vlan3,david@example.com,96-111
+switch1,,,147.251.x.20,domain4.example.com,147.251.x.0/24,vlan4,klein@example.com,0-255
+switch2,,,147.251.x.56,domain5.example.com,,,,
+,,,147.251.x.57,domain6.example.com,,,,
+,,,147.251.x.58,domain7.example.com,,,,
+,,,147.251.x.59,domain8.example.com,,,,
+,,,147.251.x.60,domain9.example.com,,,,
+,,,147.251.x.105,domain10.example.com,,,,
+,,,147.251.x.106,domain11.example.com,,,,
+,,,147.251.x.107,domain12.example.com,,,,
+,,,147.251.x.108,domain13.example.com,,,,

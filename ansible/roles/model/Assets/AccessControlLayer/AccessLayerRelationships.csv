@@ -1,0 +1,15 @@
+ComponentHasIdentity,OfApplicationName,HostHasIdentity,OfDevice,PermissionTo,Application,PermissionTo2,Device,RoleHas,Permission,UserAssigned,Role,GroupAssignedTo,Role2,UserToGroup,Group,DevicetoOrganizationUnit,OrganizationUnit,UserToOrganizationalUnit,OrgationalUnit2,GroupToOrganization,OrganizationUnit3,SubnetToOrganizationalUnit,OrganizationUnit4
+WebServer1,Eshop,Jupiter.example.com,Printer,Modify content,Eshop,Run software,PC,Administrator,Run software,Joe,Administrator,group1,Administrator,Joe,group1,PC,organizationUnit1,Joe,organizationUnit1,group1,organizationUnit1,147.251.x.16/28,organizationUnit1
+WebServer2,WebDiary,Sirius.example.com,PC,Modify content,WebDiary,Run software,Printer,Administrator,Install software,James,Administrator,group2,Moderator,James,group1,Printer,organizationUnit2,James,organizationUnit1,group2,organizationUnit2,147.251.x.48/28,organizationUnit1
+DatabaseServer1,MicrosoftAccess,Saturn.example.com,Printer,Modify content,MicrosoftAccess,Install software,PC,Administrator,Unistall software,Natalie,User,group3,User,Lagertha,group2,,,Lagertha,organizationUnit2,,,147.251.x.96/28,organizationUnit1
+DatabaseServer2,Filemaker,Keio.example.com,PC,Modify content,Filemaker,Install software,Printer,Administrator,Modify content,Adriana,User,group4,User,Frank,group2,,,Frank,organizationUnit2,,,147.251.x.0/24,organizationUnit2
+MailServer,Thunderbird,Hadar.example.com,PC,Remove Content,Eshop,Unistall software,PC,Administrator,Add content,Martin,User,,,Martin,group3,,,,,,,,
+,,Ogma.example.com,PC,Remove Content,WebDiary,Unistall software,Printer,Administrator,Remove Content,John,User,,,John,group4,,,,,,,,
+,,Rigel.example.com,PC,Remove Content,MicrosoftAccess,,,User,Run software,Francis,User,,,,,,,,,,,,
+,,Izar.example.com,PC,Remove Content,Filemaker,,,User,Add content,Lagertha,Moderator,,,,,,,,,,,,
+,,Uranus.example.com,Printer,Remove Content,Thunderbird,,,Moderator,Run software,Frank,Moderator,,,,,,,,,,,,
+,,,,Add content,Eshop,,,Moderator,Install software,,,,,,,,,,,,,,
+,,,,Add content,WebDiary,,,Moderator,Modify content,,,,,,,,,,,,,,
+,,,,Add content,MicrosoftAccess,,,Moderator,Add content,,,,,,,,,,,,,,
+,,,,Add content,Filemaker,,,,,,,,,,,,,,,,,,
+,,,,Add content,Thunderbird,,,,,,,,,,,,,,,,,,

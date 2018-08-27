@@ -1,0 +1,108 @@
+- name: Check if Neo4j is already installed
+  stat: path=/etc/init.d/neo4j
+  register: neo4j_installed
+
+- name: Install neo4j if not installed
+  block:  
+  - name: Fetch Java version ( Java 8 or greater is required)
+    shell: java -version 2>&1 | grep version | awk '{print $3}' | sed 's/"//g'
+    register: java_version
+
+  - name: Java handling
+    block:
+    - name: Add apt source repository with Java 8 (Required prerequisity for Neo4j)
+      apt_repository:
+        repo: deb http://httpredir.debian.org/debian jessie-backports main
+        state: present
+        filename: jessie-backports
+        update_cache: yes
+
+    - name: Ensure Java 8 will be installed with Neo4j if it is not already present
+      apt:
+        name: ca-certificates-java
+        state: latest
+        default_release: jessie-backports
+    when: java_version.stdout == "" or java_version.stdout | version_compare('1.8', '!=') 
+
+  - name: Add an Apt signing key, for Neo4j apt source repository
+    apt_key:
+      url: https://debian.neo4j.org/neotechnology.gpg.key
+      state: present
+
+  - name: Add apt source repository with Neo4j
+    apt_repository:
+      repo: deb http://debian.neo4j.org/repo stable/
+      state: present
+      filename: neo4j
+
+  - name: fix redirect from http to https
+    apt:
+      name: apt-transport-https
+      state: present
+      update_cache: yes
+
+  - name: Install Neo4j (in combination with Java 8 if it is not already present)
+    apt:
+      name: neo4j=1:3.4.1
+      state: present
+
+  - name: Set java 8 as default
+    command: update-java-alternatives --set java-1.8.0-openjdk-amd64 
+
+  when: neo4j_installed.stat.exists == false 
+
+- name: APOC configuration test
+  shell: cat /etc/neo4j/neo4j.conf | grep apoc.import.file.enabled=true | wc -l
+  register: apoc_test
+
+- name: APOC handling
+  block:
+  - name: Download APOC
+    get_url:
+      url: https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/download/3.4.0.1/apoc-3.4.0.1-all.jar
+      dest: /var/lib/neo4j/plugins
+      mode: 0644
+
+  - name: APOC configuration
+    lineinfile:
+      dest: /etc/neo4j/neo4j.conf
+      line: "{{ item.line }}"
+    with_items:
+      - { line: 'apoc.import.file.enabled=true' }
+      - { line: 'dbms.security.procedures.unrestricted=apoc.load.json' }
+  when: apoc_test.stdout == "0"
+
+- name: Redirecting of browser
+  lineinfile:
+    path: /etc/neo4j/neo4j.conf
+    state: present
+    line: 'dbms.connectors.default_listen_address=0.0.0.0'
+
+- name: Redirecting of bolt
+  lineinfile:
+    path: /etc/neo4j/neo4j.conf
+    state: present
+    line: 'dbms.connector.bolt.address=0.0.0.0:7687'
+ 
+- name: (Re)start neo4j
+  vars:
+    start: 'started'
+    restart: 'restarted'
+  service:
+    name: neo4j
+    state: '{{ restart if (apoc_test.stdout == "0") else start }}'
+
+- name: Wait for neo4j to start
+  wait_for:
+    port: 7474
+
+- name: Set default password via url
+  ignore_errors: yes
+  uri:
+    url: http://localhost:7474/user/neo4j/password
+    method: POST
+    user: neo4j
+    password: neo4j
+    headers:
+      Content-Type: "application/json"
+    body: '{"password":"neo4jAres"}'

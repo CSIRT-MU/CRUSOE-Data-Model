@@ -1,0 +1,10 @@
+Component,Redundancy,Dependency,DependencyType,Data
+WebServer1,RedundancyNode1,DependencyNode1,and,ProductsData
+WebServer2,RedundancyNode2,DependencyNode2,or,WebServer1ConfigurationData
+FileServer1,RedundancyNode3,,,InternalData
+FileServer2,RedundancyNode4,,,Database1Tables
+MailServer,RedundancyNode5,,,Database2Tables
+DatabaseServer1,RedundancyNode6,,,MailData
+DatabaseServer2,RedundancyNode7,,,CustomersData
+,,,,WebSourceCode
+,,,,Payments
